@@ -1,0 +1,49 @@
+.boardpost{
+    overflow-x:hidden;
+    resize:none;
+    width:85%;
+    min-height: 200px;
+    border:0;
+    border-radius:5px;
+    background-color:#f5f7fd;
+    height: 100px;
+    padding: 10px;
+}
+textarea::-webkit-scrollbar {
+    display: none;//去滚动条
+}
+
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+
+
+}
+
+ .styled select {
+
+  width: 100%;
+
+  font-size: 16px;
+
+  border: 1px solid #ccc;
+
+  height: 34px;
+
+  appearance: none;
+     /* remove default arrow */
+  background: url(../img/arrow1.png)  no-repeat scroll right center transparent;/* add custom arrow */
+}
+
+.styled {
+
+  margin-bottom: 50px;
+
+  width: 50%;
+
+  height: 34px;
+
+  border-radius: 5px;
+    overflow: hidden;
+}
+

@@ -1,0 +1,38 @@
+
+.fileInput{width:102px;height:34px; background:url(http://images.cnblogs.com/cnblogs_com/dreamback/upFileBtn.png);overflow:hidden;position:relative;}
+.upfile{position:absolute;top:-100px;}
+.upFileBtn{width:102px;height:34px;opacity:0;filter:alpha(opacity=0);cursor:pointer;}
+
+
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+
+
+}
+
+ .styled select {
+
+  width: 100%;
+
+  font-size: 16px;
+
+  border: 1px solid #ccc;
+
+     border-radius: 5px;
+  height: 34px;
+
+  appearance: none; /* remove default arrow */
+  background: url(../img/arrow1.png)  no-repeat scroll right center transparent;/* add custom arrow */
+}
+
+.styled {
+
+
+
+  width: 50%;
+
+
+  border-radius: 5px;
+    overflow: hidden;
+}

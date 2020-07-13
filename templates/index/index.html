@@ -1,0 +1,733 @@
+﻿{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>M$A</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'indexs/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'indexs/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'indexs/lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'indexs/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'indexs/lib/animate/animate.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'indexs/css/style.css' %}" rel="stylesheet">
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+  <link rel="stylesheet" href="{% static 'indexs/assets/bootstrap/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'indexs/assets/css/form-elements.css' %}">
+  <link rel="stylesheet" href="{% static 'indexs/assets/css/style.css' %}">
+  <link rel="shortcut icon" href="{% static 'indexs/assets/ico/favicon.png' %}">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'indexs/assets/ico/apple-touch-icon-144-precomposed.png' %}">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'indexs/assets/ico/apple-touch-icon-114-precomposed.png' %}">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'indexs/assets/ico/apple-touch-icon-72-precomposed.png' %}">
+  <link rel="apple-touch-icon-precomposed" href="{% static 'indexs/assets/ico/apple-touch-icon-57-precomposed.png' %}">
+
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+          <a href="#hero"><img src="{% static 'indexs/img/logo.png' %}" alt="" title=""/></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">首页</a></li>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#services">服务列表</a></li>
+          <li><a href="#portfolio"> 图片简介</a></li>
+          <li><a href="#team">团队</a></li>
+          <li class="menu-has-children"><a href="">设置</a>
+            <ul>
+              <li><a href="#">操作指南</a></li>
+              <li class="menu-has-children"><a href="#">服务类型</a>
+                <ul>
+                  <li><a href="#"></a></li>
+                  <li><a href="#">证券</a></li>
+                  <li><a href="#">股票</a></li>
+                  <li><a href="#">投资</a></li>
+                  <li><a href="#">创业</a></li>
+                </ul>
+              </li>
+              <li><a href="#">关于</a></li>
+
+              <li><a href="#">帮助</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">联系我们</a></li>
+           <li><a class="launch-modal" href="#" data-modal-id="modal-register">登陆/注册</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>欢迎来到 M$A</h1>
+      <h2>我们是一支分析和预测市场经济的优秀队伍</h2>
+      <a href="#about" class="btn-get-started">开启经济之旅</a>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">简介</h2>
+            <p>
+我们的网站专注于从微观到宏观的经济趋势分析。我们可以为个人或企业用户分析报表并预测经济发展趋势。另外，我们还有为用户投资提供指导性建议的功能，它是一个比较完整的产业经济发展趋势分析网站
+            </p>
+
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="">功能</a></h4>
+              <p class="description">我们拥有报表分析、趋势预测、投资建议、波动预警、个性化设置等功能</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-photo"></i></div>
+              <h4 class="title"><a href="">服务特点</a></h4>
+              <p class="description">我们提供给用户的信息量是巨大的，并且是极具条理的，用户可以依照自己的经济规划来获取相关联有用的信息，获取服务操作简单</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">服务宗旨</a></h4>
+              <p class="description">一切为顾客考虑，顾客是上帝，顾客的利益高于一切,全心全意为顾客服务</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">真实写照</h3>
+          <p class="section-description">我们用数据来证明自己</p>
+        </div>
+        <div class="row counters">
+
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">232</span>
+            <p>服务顾客数</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">521</span>
+            <p>承接项目数</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,463</span>
+            <p>服务时长</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">15</span>
+            <p>员工数</p>
+  				</div>
+
+  			</div>
+
+      </div>
+    </section><!-- #facts -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">服务</h3>
+          <p class="section-description">六大服务功能</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+              <h4 class="title"><a href="">分析报表</a></h4>
+              <p class="description">我们可以得到很多有用的信息供用户分析报表，使数据更加简洁明了</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-bar-chart"></i></a></div>
+              <h4 class="title"><a href="">预测经济趋势</a></h4>
+              <p class="description">我们可以及时分析经济走势，预测经济发展方向</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-paper-plane"></i></a></div>
+              <h4 class="title"><a href="">指导性建议</a></h4>
+              <p class="description">我们可以根据目前的经济形势为用户提供切实可行的投资方案</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-photo"></i></a></div>
+              <h4 class="title"><a href="">波动预警</a></h4>
+              <p class="description">如果某一行业出现剧烈的经济波动，我们会及时通知用户，减少损失</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-road"></i></a></div>
+              <h4 class="title"><a href="">个性化设置</a></h4>
+              <p class="description">用户可以根据自己的情况选择关注自己感兴趣的内容，具有很高的自由度</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="box">
+              <div class="icon"><a href=""><i class="fa fa-shopping-bag"></i></a></div>
+              <h4 class="title"><a href="">操作简单 </a></h4>
+              <p class="description"> 系统操作简单明了，便于管理员快速上手</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #services -->
+    <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网站建设</a></div>
+
+    <!--==========================
+    Call To Action Section
+    ============================-->
+    <section id="call-to-action">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">行动起来</h3>
+            <p class="cta-text">让我们采取行动。我们把用户的利益放在第一位，视用户为上帝，不遗余力地为用户服务。选择我们是成功的选择，我们将做您财富最坚强的后盾</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">行动起来</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">图片简介</h3>
+          <p class="section-description">网站特色图片介绍</p>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">全部</li>
+              <li data-filter=".filter-app">首页</li>
+              <li data-filter=".filter-card">用户</li>
+              <li data-filter=".filter-logo">管理员</li>
+              <li data-filter=".filter-web">登陆注册</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="portfolio-wrapper">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="{% static 'indexs/img/portfolio/app1.jpg' %}" alt="">
+              <div class="details">
+                <h4>App 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="">
+              <img src="{% static 'indexs/img/portfolio/web2.jpg' %}" alt="">
+              <div class="details">
+                <h4>Web 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="{% static 'indexs/img/portfolio/app3.jpg' %}" alt="">
+              <div class="details">
+                <h4>App 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="{% static 'indexs/img/portfolio/card1.jpg' %}" alt="">
+              <div class="details">
+                <h4>Card 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="{% static 'indexs/img/portfolio/card2.jpg' %}" alt="">
+              <div class="details">
+                <h4>Card 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="">
+              <img src="{% static 'indexs/img/portfolio/web3.jpg' %}" alt="">
+              <div class="details">
+                <h4>Web 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+            <a href="">
+              <img src="{% static 'indexs/img/portfolio/card3.jpg' %}" alt="">
+              <div class="details">
+                <h4>Card 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+            <a href="">
+              <img src="{% static 'indexs/img/portfolio/app2.jpg' %}" alt="">
+              <div class="details">
+                <h4>App 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="{% static 'indexs/img/portfolio/logo1.jpg' %}" alt="">
+              <div class="details">
+                <h4>Logo 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="{% static 'indexs/img/portfolio/logo3.jpg' %}" alt="">
+              <div class="details">
+                <h4>Logo 3</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+            <a href="">
+              <img src="{% static 'indexs/img/portfolio/web1.jpg' %}" alt="">
+              <div class="details">
+                <h4>Web 1</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+            <a href="">
+              <img src="{% static 'indexs/img/portfolio/logo2.jpg' %}" alt="">
+              <div class="details">
+                <h4>Logo 2</h4>
+                <span>Alored dono par</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">团队</h3>
+          <p class="section-description">团队介绍</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'indexs/img/team-1.jpg' %}" width="250px" height="250px" alt=""></div>
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'indexs/img/team-2.jpg' %}" width="250px" height="250px" alt=""></div>
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'indexs/img/team-3.jpg' %}"  width="250px" height="250px" alt=""></div>
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{% static 'indexs/img/team-4.jpg' %}"   width="250px" height="250px"  alt=""></div>
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">联系我们</h3>
+          <p class="section-description"></p>
+        </div>
+      </div>
+
+
+
+      <div class="container wow fadeInUp">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>填写地址</p>
+              </div>
+
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>填写邮箱</p>
+              </div>
+
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>填写电话</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="姓名" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="邮箱" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="主题" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="信息"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit">发送</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+  <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-labelledby="modal-register-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-header">
+            
+          <div>
+          <h3 class="modal-title" id="modal-register-label">登录</h3>
+          <p>填写以访问:</p>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" style="float: right" id="close1">
+              <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+            </button>
+        </div>
+        
+        <div class="modal-body">
+          
+                <form role="form"  method="post" class="registration-form">
+                    {% csrf_token %}
+                  <div class="form-group">
+                    <label class="sr-only" for="form-first-name1">username</label>
+                      <input type="text" name="username1" placeholder="用户名" class="form-first-name form-control" id="username1">
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="form-last-name1">password</label>
+                      <input type="password" name="password1" placeholder="密码" class="form-last-name form-control" id="password1">
+                        <span id="ddd"></span>
+                    </div>
+                
+                    <button type="button" class="btn" onclick="log_in()">登录</button>
+                    <div class="text-center">
+                        <a class="register-modal" href="#" data-modal-id="modal-register2">注册</a>
+                    </div>
+                </form>
+                
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-register2" tabindex="-1" role="dialog" aria-labelledby="modal-register-label2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          
+          <div class="modal-header">
+              
+            <div>
+            <h2 class="modal-title" id="modal-register-label">注册</h2>
+
+            </div>
+            <button type="button" class="close" data-dismiss="modal" style="float: right" id="close2">
+                <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+              </button>
+          </div>
+          
+          <div class="modal-body">
+            
+                  <form role="form"  method="POST" class="registration-form" id="register2" >
+                      {% csrf_token %}
+                    <div class="form-group">
+                      <label class="sr-only" for="Your Name2" >用户名</label>
+                        <input type="text" name="username2" placeholder="用户名" class="form-control" id="Your Name" onblur="checkName()"><span id="sp"></span>
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="Password2">密码</label>
+                          <input type="password" name="password2" placeholder="密码" class="form-control" id="Password2">
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="Password Again2">再次输入密码</label>
+                          <input type="password" name="password again2" placeholder="再次输入密码" class="form-control" id="Password Again2">
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="Email2">邮箱</label>
+                        <input type="text" name="email2" placeholder="邮箱" class="form-control" id="email2">
+                      </div>
+
+                      <div class="form-group">
+                        <label class="sr-only" for="verify">验证码</label>
+                        <input type="text" name="vfcode" placeholder="验证码" class="form-control" id="vfcode" style="width: 40%;display: inline"><span id="sn"></span>
+                          <button type="button" class=" btn" id="verify" onclick="settime(this);sendcode();" style="width: 27%;background: #58e1fd;position: relative;left: 5%" value="获去验证码">获取验证码</button>
+                          <script type="text/javascript">
+                                var countdown=60;
+                                function settime(val) {
+                                if (countdown == 0) {
+                                    val.removeAttribute("disabled");
+                                    $("#verify").html('get verifycode');
+
+                                    countdown = 60;
+                                    return;
+                                }
+                                else  {
+                                val.setAttribute("disabled", true);
+                                $("#verify").html('try again('+ countdown + ')');
+
+                                countdown--;
+                                }
+                                setTimeout(function() {
+                                settime(val)
+                                },1000)
+                                }
+                          </script>
+                      </div>
+
+                      <button type="button" class="btn signover" onclick="signup();re();" data-modal-id="modal-register" >登录</button>
+
+                  </form>
+                  
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-register3" tabindex="-1" role="dialog" aria-labelledby="modal-register-label3" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">   
+              <div>
+              <h3 class="modal-title" id="modal-register-label">Congratulations!</h3>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" style="float: right">
+                  <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+              <p>Success!</p>
+              <button type="conform" class="btn">Conform</button>    
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Regna</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Bootstrap Templates  BootstrapMade. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+
+ 
+  <!-- JavaScript Libraries -->
+
+  <script src="{% static 'indexs/lib/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'indexs/lib/jquery/jquery-migrate.min.js' %}"></script>
+  <script src="{% static 'indexs/lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'indexs/lib/easing/easing.min.js' %}"></script>
+  <script src="{% static 'indexs/lib/wow/wow.min.js' %}"></script>
+
+  <script src="{% static 'indexs/lib/waypoints/waypoints.min.js' %}"></script>
+  <script src="{% static 'indexs/lib/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'indexs/lib/superfish/hoverIntent.js' %}"></script>
+  <script src="{% static 'indexs/lib/superfish/superfish.min.js' %}"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static 'indexs/contactform/contactform.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'indexs/js/main.js' %}"></script>
+
+  <script src="{% static 'indexs/assets/js/jquery-1.11.1.min.js' %}"></script>
+  <script src="{% static 'indexs/assets/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'indexs/assets/js/jquery.backstretch.min.js' %}"></script>
+  <script src="{% static 'indexs/assets/js/scripts.js' %}"></script>
+  <script type="text/javascript" src="{% static 'indexs/js/func.js' %}" ></script>
+  <script type="text/javascript" src="{% static 'indexs/js/login.js' %}" ></script>
+</body>
+</html>
